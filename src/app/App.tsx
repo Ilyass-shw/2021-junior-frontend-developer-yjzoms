@@ -30,12 +30,12 @@ const App: React.FC = () => {
           </Col>
           <Col
             md={{ span: 6, offset: 1 }}
-            className="pe-md-0  px-sm-0 pt-md-0 my-5 mt-md-0"
+            className="pe-md-0  px-sm-0 pt-md-0 my-5 mt-md-0 mb-md-0"
           >
             <Overview />
           </Col>
         </Row>
-        <Row md={2}>
+        <Row md={2} className='mt-md-5'>
           {dataFetching === "failed" && <p>Fetching Data failed!</p>}
           {dataFetching === ("Loading" || "idle") && (
             <Spinner animation="grow" variant="info" />
