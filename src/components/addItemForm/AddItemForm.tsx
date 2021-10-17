@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useAppDispatch } from "../../app/hooks";
 
 import { addCostItem } from "../costsSlice/costsSlice";
+import { calculateGrossMoney } from "../helpers/calculateCostProtions";
 import AddItemButtons from "../addItemButtons/AddItemButtons";
+import AddItemFormInfo from "../addItemFormInfo/AddItemFormInfo";
 
 import Form from "react-bootstrap/Form";
 
@@ -60,6 +62,11 @@ const AddItemForm: React.FC = () => {
             onChange={(e) => setNetInputValue(e.target.value)}
           />
         </Form.Group>
+        <AddItemFormInfo
+          gross={
+            netInputValue ? calculateGrossMoney(parseInt(netInputValue)) : 0
+          }
+        />
         <AddItemButtons
           addItem={addItem}
           reset={resetForm}
