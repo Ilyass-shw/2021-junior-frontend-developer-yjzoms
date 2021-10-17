@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-
+// import download from '../../'
 const Navigation: React.FC = () => {
   return (
-    <Navbar bg="light">
+    <Navbar>
       <Container>
         <Navbar.Brand href="/">
           <img

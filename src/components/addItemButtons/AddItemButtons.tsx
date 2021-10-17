@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Stack from 'react-bootstrap/Stack';
 
 interface AddItemButtonsProps {
   addItem: () => void;
