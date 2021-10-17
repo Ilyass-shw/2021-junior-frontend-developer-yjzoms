@@ -5,6 +5,7 @@ import { getCosts } from "../components/costsSlice/costsSlice";
 import { useAppDispatch } from "../app/hooks";
 
 import Navigation from "../components/navigation/Navigation";
+import AddItemForm from "../components/addItemForm/AddItemForm";
 
 
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
   return (
     <>
       <Navigation/>
+      <AddItemForm />
     </>
   );
 };
