@@ -111,7 +111,7 @@ module.exports = {
 
   // required if using webpack-dev-server
   devServer: {
-    static: "./dist",
+    static: "./public",
     hot: true,
   },
 };

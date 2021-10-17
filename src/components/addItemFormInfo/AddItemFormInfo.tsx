@@ -15,7 +15,7 @@ const AddItemFormInfo: React.FC<AddItemFormInfoProps> = ({ gross }) => {
         </div>
       </Col>
       <Col xs={{ span: 3 }}>
-        <div >
+        <div>
           <h6>Gross</h6>
           <h5>{gross.toFixed(2)} €</h5>
         </div>
